@@ -4,6 +4,5 @@ function isEmpty(array) {
 }
 export function analyzeArray(array) {
 	if (isEmpty(array)) return "Invalid input";
-
-  let average = array.reduce((total,current)=>{},0)
+  if(array.length === 0) return "Invalid input";
 }

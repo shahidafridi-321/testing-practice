@@ -5,5 +5,5 @@ test("Handles empty parameters", () => {
 });
 
 test("Handles empty array", () => {
-	expect(analyzeArray([]).toBe("Invalid input"));
+	expect(analyzeArray([])).toBe("Invalid input");
 });
