@@ -5,7 +5,12 @@ test("Handles empty parameters", () => {
 });
 
 test("Handles empty array", () => {
-	expect(analyzeArray([])).toBe("Invalid input");
+	expect(analyzeArray([])).toEqual({
+		average: 0,
+		max: 0,
+		min: 0,
+		length: 0,
+	});
 });
 
 test("Average of [1,2,3,4,5] is 3", () => {
