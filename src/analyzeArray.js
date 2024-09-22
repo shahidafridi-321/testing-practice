@@ -15,5 +15,6 @@ export function analyzeArray(array) {
 		average,
 		max,
 		min,
+    length
 	};
 }
