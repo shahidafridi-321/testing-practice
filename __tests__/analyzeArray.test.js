@@ -37,3 +37,18 @@ test("Maximum of [0.3,0.4,0.839,2.09] is 2.09", () => {
 	let obj = analyzeArray([0.3, 0.4, 0.839, 2.09]);
 	expect(obj.max).toBe(2.09);
 });
+
+test("Minimum of [1.1,2.6,3.9,4.1,5,6,10] is 1.1", () => {
+	let obj = analyzeArray([1.1, 2.6, 3.9, 4.1, 5, 6, 10]);
+	expect(obj.min).toBe(1.1);
+});
+
+test("Minimum of [22,3,999,4,22,45,5] is 3", () => {
+	let obj = analyzeArray([22, 3, 999, 4, 22, 45, 5]);
+	expect(obj.min).toBe(3);
+});
+
+test("Minimum of [0.3,0.4,0.839,2.09] is 0.3", () => {
+	let obj = analyzeArray([0.3, 0.4, 0.839, 2.09]);
+	expect(obj.min).toBe(0.3);
+});
