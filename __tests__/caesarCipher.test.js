@@ -27,3 +27,7 @@ test("Converts z to c", () => {
 test("Converts XYZ to ABC", () => {
 	expect(caesarCipher("XYZ", 3)).toBe("ABC");
 });
+
+test("Handles Punctuations, spaces, and other non-alphabetical characters Hello, World! returns Khoor, Zruog!", () => {
+	expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+});
