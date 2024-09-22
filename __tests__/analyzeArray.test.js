@@ -52,3 +52,8 @@ test("Minimum of [0.3,0.4,0.839,2.09] is 0.3", () => {
 	let obj = analyzeArray([0.3, 0.4, 0.839, 2.09]);
 	expect(obj.min).toBe(0.3);
 });
+
+test("length of [0.3,0.4,0.839,2.09] is 4", () => {
+	let obj = analyzeArray([0.3, 0.4, 0.839, 2.09]);
+	expect(obj.length).toBe(4);
+});
