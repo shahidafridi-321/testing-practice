@@ -3,19 +3,17 @@ export function caesarCipher(string, shiftFactor) {
 		return "Invalid input";
 	let caesarCipherString = "";
 	for (let i = 0; i < string.length; i++) {
-		caesarCipherString += String.fromCharCode(
-			string.charCodeAt(i) + shiftFactor >= 122
-				? string.charCodeAt(i) + shiftFactor - 26
-				: string.charCodeAt(i) + shiftFactor
-		);
+		let char = string[i];
+		let charCode = string.charCodeAt(i);
+		if (char >= "a" && char <= "z") {
+			caesarCipherString += String.fromCharCode(
+				((charCode - 97 + shiftFactor) % 26) + 97
+			);
+		} else if (char >= "A" && char <= "Z") {
+			caesarCipherString += String.fromCharCode(
+				((charCode - 65 + shiftFactor) % 26) + 65
+			);
+		}
 	}
 	return caesarCipherString;
 }
-
-/* let z = "z";
-let Z = "Z";
-let charCodeOfz = z.charCodeAt(0);
-let charCodeOfZ = Z.charCodeAt(0);
-console.log(charCodeOfz, charCodeOfZ);
-console.log(String.fromCharCode(charCodeOfz - 25));
- */
