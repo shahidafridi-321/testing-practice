@@ -24,3 +24,6 @@ test("Converts z to c", () => {
 	expect(caesarCipher("z", 3)).toBe("c");
 });
 
+test("Converts XYZ to ABC", () => {
+	expect(caesarCipher("XYZ", 3)).toBe("ABC");
+});
