@@ -13,6 +13,10 @@ export function caesarCipher(string, shiftFactor) {
 			caesarCipherString += String.fromCharCode(
 				((charCode - 65 + shiftFactor) % 26) + 65
 			);
+		} else {
+			// caesarCipherString += String.fromCharCode(string.charCodeAt(i));
+			// OR
+			caesarCipherString += char;
 		}
 	}
 	return caesarCipherString;
